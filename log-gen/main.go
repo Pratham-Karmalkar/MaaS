@@ -18,8 +18,5 @@ func main() {
 	http.Handle("/", r)
 	fmt.Print("server running ...")
 	log.Fatal(http.ListenAndServe("localhost:8080", nil))
-	//Kafka broker addresses
-
-	//Go routine to generate Log data every time.Second * <Integer> seconds(current value 2)
 
 }

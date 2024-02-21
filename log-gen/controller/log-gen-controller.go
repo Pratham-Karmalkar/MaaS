@@ -105,7 +105,6 @@ func StartGeneration(w http.ResponseWriter, r *http.Request) {
 
 func startGeneration() {
 	brokerList = []string{"localhost:29092"}
-
 	// Kafka producer configuration
 	config := sarama.NewConfig()
 	config.Producer.Return.Successes = true
