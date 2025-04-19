@@ -1,13 +1,33 @@
-# Kafka-ELK Data Pipeline
+# 🚀 Kafka-ELK Data Pipeline
 
-This project talks about configuring logstash for input from Kafka topics and modify the data.   
+This project sets up a real-time log processing pipeline using **Kafka** and the **ELK Stack** — fully containerized with **Docker** for easy deployment.
 
-#### Components :
-Filebeat – collects logs and forwards them to a Kafka topic.  
-Kafka – brokers the data flow and queues it.  
-Logstash – aggregates the data from the Kafka topic, processes it and ships to Elasticsearch.  
-Elasticsearch – indexes the data.  
-Kibana – for visualizing and analyzing the data.   
+---
 
-All applications run within Docker containers configured using YAML files.
+## 🔧 Components
 
+- **Filebeat** – Ships log data to Kafka topics.  
+- **Kafka** – Buffers and queues log data.  
+- **Logstash** – Pulls data from Kafka, processes it, and forwards it.  
+- **Elasticsearch** – Indexes and stores structured logs.  
+- **Kibana** – Visualizes logs through rich dashboards.
+
+---
+
+## 🔄 Data Flow
+
+```
+Logs → Filebeat → Kafka → Logstash → Elasticsearch → Kibana
+```
+
+---
+
+## 🐳 Dockerized Setup
+
+Each component runs in its own Docker container, orchestrated via YAML files — ensuring a portable, scalable, and ready-to-use pipeline.
+
+---
+
+Use this pipeline to monitor logs, detect anomalies, and gain real-time insights into your system.
+
+---
